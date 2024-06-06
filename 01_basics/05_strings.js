@@ -29,4 +29,4 @@ console.log(url.replace('%99','-'))
 console.log(url.includes("vaibhav"))
 
 const Beauty = "Handsome is one who give hand to some"
-console.log(Beauty.split(' '))  // converting string into an array
+console.log(Beauty.split(' '))  // converting string into an array 

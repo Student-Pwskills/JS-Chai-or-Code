@@ -43,3 +43,35 @@ console.log(Object.values(tinderUser))
 console.log(Object.entries(tinderUser))  // each key value pair is converted into in array
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+
+
+//+++++++++++ object de-structure ++++++++++++++++++++++++++++++++++++++++++
+
+const course = {
+    courseName : "jsinhindi",
+    courseInstructor : "Vibhu",
+    price : "999"
+}
+// console.log(course.price)
+
+const { courseInstructor: Instructor} = course         // another way (syntax)
+console.log(Instructor)
+
+const navabar = ({company}) => {
+                                            // ojbect de-structure
+}
+navabar(company = "hitesh")
+
+
+{
+    "name":"Vaibhav",                                         //JSON API
+    "courseName": "jsinhindi",
+    "price":"free"
+}
+
+[
+    {},
+    {},                   // Array JSON API
+    {}
+]

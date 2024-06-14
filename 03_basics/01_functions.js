@@ -29,3 +29,44 @@ function userLoginMessage(userName){
     return ` ${userName} just logged In`
 }
 console.log(userLoginMessage("Vaibhav Shukla"))
+
+// Handling multiple arguments with rest(...) operator 
+
+function subjects(...sub){
+ return sub          // it will return an array
+}
+console.log(subjects("Hidi","English","urdu"))
+
+
+
+// passing objects in functions (as argument)
+
+const btech = {
+    branch : cse,
+    section : c
+}
+
+function handleAnyOjbect( obj){
+    console.log(` Branch is ${obj.branch} and section is ${obj.section}`)
+}
+handleAnyOjbect(btech)
+
+// another way
+ handleAnyOjbect({
+    branch : ME ,
+    section : D 
+ })
+
+ // passing arrays in functions (as argument)
+
+ const myArray = [2,3,4,5,3]
+
+ function getSecondEle( getArray){
+    return getArray[1]
+ }
+ console.log(getSecondEle(myArray))
+
+ // another way
+ 
+ console.log(getSecondEle([2,3,3,5,6]))
+ 
